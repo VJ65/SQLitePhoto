@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/imageNameEt"
+       android:maxLength="23"
+       android:hint="Enter Image Name "
+       android:textColor="@android:color/black"
+       ></EditText>
+
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="400dp"
+      android:onClick="chooseImage"
+      android:id="@+id/image"
+        android:layout_below="@id/imageNameEt"
+        android:src="@drawable/ic_face_black_24dp"
+      android:scaleType="centerCrop"
+      ></ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Image"
+        android:id="@+id/saveBtn"
+        android:onClick="StoreImage"
+        android:layout_below="@id/image"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        ></Button>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="mvShowActivity"
+    android:id="@+id/moveToShowActivity"
+    android:layout_below="@id/saveBtn"
+    android:background="@android:color/holo_green_dark"
+    android:text="Move to show activity"
+    android:layout_marginTop="2dp"
+
+    ></Button>
+
+
+
+</RelativeLayout>
